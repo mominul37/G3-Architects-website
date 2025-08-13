@@ -1,4 +1,232 @@
 .work-sana-font{
     font-family: 'Times New Roman', Times, serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: none;
+}
+/* .display-flex{ */
+    /* display: flex; */
+
+/* shared style */
+ .text-gray{
+    color:#424242
+ }
+/* header style */
+.btn-primary{
+    background-color: #FF900E;
+    color: white;
+    font-size: 1.25rem;
+    padding: 20px 25px;
+    border-radius: 8px;
+    border: none;
+
+
+}
+.main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.main>section{
+    margin-top: 130px; 
+}
+
+/* navbar related style */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+.bg-light{
+    background-color: rgb(235, 186, 127);
+}}
+.brand{
+    font-size: 2.5rem;
+    gap:10px;
+}
+.nav-links{
+    display: flex;
     
 }
+.nav-item{
+    list-style: none;
+    margin: 30px;
+}
+.nav-link{
+    text-decoration: none;
+}
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+/* banner related style */
+.banner-content{
+    min-width: 850px;
+    margin:0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-tittle{
+    font-weight:780 ;
+    font-size: 4rem;
+}
+
+/* Main section style */
+.teams{
+    display:flex;
+    align-items: center;
+    margin-top: 10px;
+    /* border: 2px solid red; */
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:24px;
+}
+.our-features{
+    margin-left: 30px;
+}
+.section-tittle{
+    font-size: 2.8rem;
+    font-weight: 700;
+
+}
+#Quick-tittle{
+    color: #424242;
+}
+.text-primary{
+    color: #FF900E;
+}
+.team-img-container{
+    grid-template-columns: repeat(1,1fr);
+}
+/* feature section related style */
+
+.features {
+    display: flex;
+    gap:14px;
+}
+#feature-section-tittle{
+    border-left: 5px solid #FF900E;
+    padding: 20px;
+}
+.feature-card{
+    padding: 30px;
+    border-radius: 8px;
+     box-shadow: 0 4px 30px 0 rgba(78, 73, 73, 0.06);
+     margin-bottom: 20px;
+}
+.feature-cards .feature-tittle{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom:0px ;
+  
+    
+}
+#experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left:-100px;
+    margin-top:-100px;
+}
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+
+/* some fact related style */
+.facts-container{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.fact-card{
+    border: 1px solid rebeccapurple;
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.fact-number{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.font-name{
+    font-size: 1.25rem;
+    font-weight: 600px;
+    margin-top: 10px;
+}
+.fact-description{
+    max-width: 540px;
+}
+/* sponser Related style */
+.sponsor-info{
+    max-width: 540px;
+    margin: 30px auto;
+    text-align: center;
+}
+.sponsor-companies{
+    display: grid;
+    grid-template-columns:repeat(5,1fr) ;
+
+}
+.sponsor-companies img{
+    filter: grayscale(100%);
+}
+.featured-architect img{
+    width: 100%;
+
+}
+
+    /* Responsive media query */
+   @media screen and(max-width:576) {
+    .navbar,
+     .nav-links,
+      .teams{
+        flex-direction: column;
+      }
+      .team-img-container,
+      .facts-container,
+      .sponsor-companies,
+      .features
+      {
+        grid-template-columns:1fr ;
+      }
+      .facts-container{
+        justify-items: center;
+        gap: 24px;
+      }
+      .sponsor-companies{
+         justify-items: center;
+         gap: 50pxpx;
+      }
+      #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+    
+   }
+   /* medium size device */
+   @media screen and (min-width:576px) and (max-width:992px){
+    .teams{
+        flex-direction: column;
+    }
+    .our-features{
+        margin: 50px auto;
+    }
+    .sponsor-companies,.facts-container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 50px;
+        justify-items: center;
+    }
+    
+   } 
+    
